@@ -48,3 +48,16 @@ body {
 .header-nav a.active::after {
     background: #FFC725;
 }
+.button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    gap: 10px;
+}
+.button-text {
+    color: #443737;
+    font-weight: 700;
+    font-size: 15px;
+}
