@@ -7,6 +7,9 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+header {
+    border-bottom: 1px solid #DEDEDE;
+}
 .header {
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -14,7 +17,6 @@ body {
     justify-content: space-between;
     padding-top: 26px;
     padding-bottom: 26px;
-
 }
 .header-logo {
     display: block;
@@ -36,6 +38,9 @@ body {
     color: #443737;
     text-decoration: none;
 }
+.header-nav a:hover {
+    color: #FFC725;
+}
 .header-nav a::after {
     content: '';
     width: 100%;
@@ -54,6 +59,7 @@ body {
     border: none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 .button-text {
     color: #443737;
@@ -97,6 +103,7 @@ body {
     background-size: cover;
     background-position: center center;
     padding: 142px 0;
+    margin-bottom: 140px;
 }
 .breadcrumbs {
     padding-left: 0;
@@ -112,10 +119,17 @@ body {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
+.breadcrumbs a:hover {
+    color: #FFC725;
+}
 .breadcrumbs a::before {
     content: '/';
     position: relative;
     left: -7px;
+    pointer-events: none;
+}
+.breadcrumbs a:hover::before {
+    color: #DEDEDE;
 }
 .breadcrumbs li:first-child a::before {
     display: none;
@@ -133,4 +147,58 @@ body {
     color: #FAF9F9;
     max-width: 320px;
     margin: 0 auto;
+}
+.banner-box {
+    background-image: url(../images/banner.jpg);
+    height: 438px;
+    background-size: cover;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+h2 {
+    color: #FFF;
+    font-family: 'Nunito Sans';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+}
+.banner-title {
+    display: grid;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.banner-title span {
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    width: 95px;
+    height: 28px;
+    border-radius: 14px;
+    background: #F37335;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 26px;
+}
+.banner-text {
+    width: 353px;
+    height: 48px;
+    color: #FAF9F9;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.banner-link {
+    width: 170px;
+    height: 58px;
+    border-radius: 5px;
+    background: #FBB731;
+    padding: 10px 20px;
+    color: #1E2F40;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
 }
